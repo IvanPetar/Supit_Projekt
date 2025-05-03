@@ -3,9 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/world-skills.css" />
+  <link rel="stylesheet" href="./css/global.css"/>
+  <title>Sveučilište Algebra</title>
 </head>
 <body>
+  <section id="worldskills-section">
+    <div class="text-overlay">
+      <h2>
+        Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti.
+      </h2>
+    </div>
+
+    <img src="./images/novost1.jpg" alt="news"  id="world-skill-image"/>
+
+    <div class="about-us">
+      <h2 class="about-us">WorldSkills natjecanje - Kazan 2019.</h2>
+      <div class="orange-line"></div>
+    </div>
+
+    <p>
+      Nakon godinu dana priprema za natjecanje WorldSkills Kazan 2019 na kojem
+      je sudjelovalo 1300 natjecatelja iz cijelog svijeta, trud se itekako
+      isplatio. Josip, student 3. godine preddiplomskog studija sistemskog
+      inženjerstva osvojio je 12. mjesto u vještini IT Networks and System
+      Administration te osvojio medalju izvrsnosti! Čestitke Josipu ali i
+      njegovim/našim mentorima koji su ga pripremali za ovo natjecanje -
+      voditelju studija sistemskog inženjerstva Silviju Papiću, voditelju
+      katedre za operacijske sustave - Vedranu Dakiću i asistentu na studiju
+      sistemskog inženjerstva - Jasminu Redžepagiću. Čestitke i našem studentu
+      3.godine preddiplomskog studija programskog inženjerstva Josipu Horvatu
+      i mentoru voditelju katedre za programsko inženjerstvo - Goranu Đambiću
+      na osvojenom 16.mjestu u vještini IT Software Solutions for Business.
+    </p>
+
+
+    <div class="gallery">
+      <img src="./images/novost1.jpg" alt="slika 1" onclick="openModal(0)" />
+      <img src="./images/galerija2.jpg" alt="slika 2" onclick="openModal(1)" />
+    </div>
+    
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="lightbox-img" class="lightbox-content" />
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
   
+  </section>
+  <script src="./js/world-skills.js"></script>
 </body>
 </html>
