@@ -6,9 +6,9 @@
 
 #world-skill-image {
   width: 100%;
-  height: auto;
   max-height: 400px;
   margin-top: 40px;
+  background-size: cover;
 }
 
 .text-overlay{
@@ -67,14 +67,15 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 #modal-image{
-  max-height: 90%;
-  max-width:  90%;
+  width:  100%;
   position: relative;
   object-fit: contain;
   border-radius: 10px;
+ 
 }
 
 .close,
@@ -89,8 +90,8 @@
 }
 
 .close {
-  top: 25%;
-  right: 12%;
+  top: 20%;
+  right: 1%;
   padding: 10px;
 }
 
@@ -102,9 +103,10 @@
 }
 
 .prev {
-  left: 10%;
+  left: 1%;
 }
 
 .next {
-  right: 10%;
+  right: 1%;
 }
+
