@@ -1,5 +1,6 @@
 #worldskills-section {
   width: 100%;
+  height: auto;
   overflow: hidden;
   position: relative;
 }
@@ -9,6 +10,7 @@
   max-height: 400px;
   margin-top: 40px;
   background-size: cover;
+  
 }
 
 .text-overlay{
@@ -18,7 +20,7 @@
   left: 25%;
   max-width: 50%;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 1px 1px 2px black;
   text-align: center;
@@ -42,16 +44,16 @@
 }
 
 .gallery img {
-  width: 370px;
+  width: 310px;
   cursor: pointer;
   transition: transform 0.3s, opacity 0.3s;
-  opacity: 0.8;
+  opacity: 0.6;
   border-radius: 5px;
 }
 
 .gallery img:hover {
   transform: scale(1.05);
-  opacity: 0.7;
+  opacity: 1;
 }
 
 /* lightbox modal*/
@@ -110,3 +112,24 @@
   right: 1%;
 }
 
+#video-worldskill{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  position: relative;  
+}
+
+#video-worldskill video{
+  width: 100%;
+  max-width: calc(2 * 300px + 40px);  
+}
+
+
+@media (max-width: 768px) {
+  .text-overlay {
+    position: absolute;
+    top: 6%;
+    left: 30%;
+    font-size: 10px;
+  }
+}
