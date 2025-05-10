@@ -24,23 +24,22 @@ body {
 }
 
 .navigation-bar {
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 5px 20px;
   flex-wrap: wrap;
 }
 
-.unordered-list {
-  list-style: none;
+.unordered-list,
+.transition-list {
   display: flex;
-  gap: 20px;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  gap: 40px;
+  list-style-type: none;
 }
+
 
 .unordered-list li a {
   color: white;
@@ -51,17 +50,24 @@ body {
   gap: 5px;
 }
 
+.transition-list li a{
+  color: rgb(255, 149, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .unordered-list li a:hover {
   color: #f6c000;
   transition: 0.3s;
 }
 
-.hamburger-menu {
-  display: none; /* po želji dodaš za mobile view */
+.transition-list li a:hover{
+  color: #f6c000;
 }
 
-
-
+.hamburger-menu {
+  display: none; /* po želji dodat za mobile view */
+}
 
 .orange-line {
   height: 3px;
@@ -85,7 +91,7 @@ body {
 }
 
 .about-us h2 {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
 }
 

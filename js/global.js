@@ -30,14 +30,14 @@ $(document).ready(function () {
 
     // 'about.html'
     if (window.location.pathname.includes("about.html")) {
-      const extraMenu = $("<ul>").addClass("transition-list");
+      const transitionList = $("<ul>").addClass("transition-list");
 
-      extraMenu.append('<li><a href="#first-section">Naše vrijednosti</a></li>');
-      extraMenu.append('<li><a href="#history-graybox">Povijest</a></li>');
-      extraMenu.append('<li><a href="#algebra-graybox">Algebra grupa</a></li>');
-      extraMenu.append('<li><a href="#map-section">Kako do nas</a></li>');
+      transitionList.append('<li><a href="#start-section">Naše vrijednosti</a></li>');
+      transitionList.append('<li><a href="#history-paragraph">Povijest</a></li>');
+      transitionList.append('<li><a href="#algebra-paragraph">Algebra grupa</a></li>');
+      transitionList.append('<li><a href="#last-section">Kako do nas</a></li>');
 
-      $(".navigation-bar").append(extraMenu);
+      $(".navigation-bar").append(transitionList);
     }
   });
 });
