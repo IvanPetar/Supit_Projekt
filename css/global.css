@@ -115,6 +115,40 @@ font-style: italic;
 padding: 50px;
 }
 
+/*footer*/
+
+.footer-section-page{
+  background-image: url(../images/zaiskri-bg.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  display: flex;
+  min-height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#first {
+  color: #ffff;
+}
+#second{
+  color: #960000b4;
+}
 
 .hidden {
   display: none;

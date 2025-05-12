@@ -4,11 +4,11 @@
 }
 
 #news-section{
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .news {
-  margin: 80px 0px;
+  margin:80px 0px;
   text-align: center;
   font-weight: bold;
   display: flex;
@@ -17,7 +17,7 @@
 }
 
 .border-img:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 
 .news-images {
@@ -25,7 +25,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 150px;
-  margin-top: 150px;
+  margin-top: 100px;
   background-color: #f9f9f9;
   padding: 50px 0;
   width: 100%;

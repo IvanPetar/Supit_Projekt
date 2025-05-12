@@ -40,4 +40,13 @@ $(document).ready(function () {
       $(".navigation-bar").append(transitionList);
     }
   });
+
+  //dinamicko ucitavanje footera
+  $("footer").load("footer.html");
+
+
+
 });
+
+
+
