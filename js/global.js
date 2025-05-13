@@ -43,7 +43,9 @@ $(document).ready(function () {
 
   //dinamicko ucitavanje footera
   $("footer").load("footer.html");
+  
 
+  
 
 
 });
