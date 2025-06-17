@@ -149,7 +149,12 @@ padding: 50px;
 #second{
   color: #960000b4;
 }
+/*boostrap login*/
+.col-md-5{
+  padding-top: 20px;
+}
 
 .hidden {
   display: none;
 }
+

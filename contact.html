@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/contact.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./css/global.css">
+  <script src="https://code.jquery.com/jquery0-3.6.0.min.js"></script>
   <title>Sveučilište Algebra</title>
 </head>
 <body>
@@ -33,15 +34,19 @@
 
       <div class="newsletter-wrap">
         <label>Želim primati obavijesti</label>
-        <input type="checkbox" name="Newsletter" id="Newsletter">
-        
+        <input type="checkbox" name="Newsletter" id="News"/>
         </label>
+        <div class="buttons">
+        <button type="submit" class="btn-submit" id="sub-but">Pošalji</button>
+        <button type="quit" class="btn-quit" id="qui-but">Odustani</button>
+        </div>
+
       </div>
-      <button class="btn-submit" type="submit">Pošalji</button>
-      <button class="btn-quit" type="quit">Odustani</button>
+      
     </form>
   </div>
 
   <script src="./js/contact.js"></script>
+  <script src="./js/global.js"></script>
 </body>
 </html>
