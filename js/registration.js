@@ -8,25 +8,24 @@ const username = document.getElementById("username").value;
 const password = document.getElementById("password").value;
   
 try {
-      // Send a POST request to the registration API
+      // Pošalji POST zahtjev API-ju za registraciju
       const response = await fetch(
         "https://www.fulek.com/data/api/user/register",
         {
           method: "POST",
-          headers: { "Content-Type": "application/json" }, // Specify the content type as JSON
-          body: JSON.stringify({ username, password }), // Convert the input data to a JSON string
+          headers: { "Content-Type": "application/json" }, // Odredite vrstu sadržaja kao JSON
+          body: JSON.stringify({ username, password }), // Pretvori ulazne podatke u JSON niz znakova
         }
       );
 
-      if (response.ok) {
-        // alert("Registration successful! Redirecting to login...");
-        window.location.href = "login.html"; // Redirect to the login page
+      if (response.ok) {  
+        window.location.href = "login.html"; // Preusmjeri na stranicu za prijavu
       } else {
-        // If the registration fails, notify the user
+        // Ako registracija ne uspije, obavijestiti korisnika
         alert("Registration failed. Please try again.");
       }
     } catch (error) {
-      // Handle any errors that occur during the API request
+      // Obrađuje sve pogreške koje se dogode tijekom API zahtjeva
       console.error("Registration error:", error);
       alert("An error occurred. Please try again.");
     }

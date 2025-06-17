@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Form = document.getElementById("form");
 
   Form.addEventListener("submit", async (event) => {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault(); // Sprječava slanje zadanog obrasca
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -19,21 +19,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (response.ok) {
         const data = await response.json();
-        console.log("Login response:", data); // Inspect server response
+        console.log("Login response:", data); // Pregledajte odgovor poslužitelja
 
-        // Correctly access token from response
+        // Ispravno pristupi tokenu iz odgovora
         if (data.data && data.data.token) {
-          localStorage.setItem("jwt", data.data.token); // Store token for future requests
-          window.location.href = "index.html"; // Redirect to the homepage
+          localStorage.setItem("jwt", data.data.token); // Pohrani token za buduće zahtjeve
+          window.location.href = "index.html"; // Preusmjeri na početnu stranicu
         } else {
           alert("Login failed.");
         }
       } else {
-        alert("Invalid credentials. Please try again."); // General error for failed response
+        alert("Invalid credentials. Please try again."); // Opća greška za neuspjeli odgovor
       }
     } catch (error) {
-      console.error("Login error:", error); // Log any network errors
-      alert("An error occurred. Please try again."); // Notify user of an error
+      console.error("Login error:", error); // Zabilježi sve mrežne pogreške
+      alert("An error occurred. Please try again."); // Obavijesti korisnika o pogrešci
     }
   });
 });

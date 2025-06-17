@@ -1,0 +1,15 @@
+.yellow-line {
+            height: 4px;
+            background-color: #ffcb05;
+            width: 60%;
+            margin: 0 auto 2.5rem auto;
+            border-radius: 2px;
+        }
+        @media (max-width: 768px) {
+            .yellow-line { width: 100%; }
+        }
+.delete-btn{
+    color: white;
+    background-color: red;
+    border: none;
+}
